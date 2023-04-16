@@ -30,9 +30,11 @@ if ($_SERVER['REQUEST_METHOD'] === "GET") {
     <div class="row">
         <table class="cart-items">
             <thead>
-                <th> Item </th>
-                <th> Qte </th>
-                <th> </th>
+                <tr>
+                    <th> Item </th>
+                    <th> Qte </th>
+                    <th> </th>
+                </tr>
             </thead>
             <tbody>
                 <?php foreach (array_count_values($_SESSION['cart']) as $cartKey => $qte) : ?>
